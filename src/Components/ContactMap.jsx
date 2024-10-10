@@ -48,7 +48,7 @@ const ContactMap = () => {
 
           {/* Map */}
           <div className="flex justify-center w-full h-full"> {/* Full-width and height */}
-            <iframe
+            <iframe title="map"
               src={currentMap}
               width="100%"
               height="100%"  
