@@ -1,0 +1,117 @@
+
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+/* Swipper */
+/* Add this in index.css or your global CSS */
+@import 'swiper/css';
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora";
+  background-color: #FFFFFF;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root{
+  --color-base: #FFFFFF;
+  --color-primary: #ED1C24;
+  --color-secondery: #1E1E1E;
+  --color-vanish: #F0F4F8;
+  --color-span: #B8B8B8;
+  --color-ts: #525252;
+}
+
+
+.buttonOne {
+  position: relative; 
+  padding: 24px 42px; 
+  border-radius: 50px;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden; 
+  transition: color 0.3s ease; 
+}
+
+.buttonOne::before {
+  content: ''; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color:var(--color-primary) ; 
+  transform: translateX(-100%); 
+  transition: transform 0.60s ease; 
+  z-index: 0; 
+}
+
+.buttonText {
+  position: relative; 
+  z-index: 1; 
+}
+
+.buttonOne:hover::before {
+  transform: translateX(0); 
+}
+
+.buttonOne:hover {
+  color: var(--color-base); 
+}
+/* White BTN */
+.buttonTwo {
+  position: relative; 
+  padding: 24px 42px; 
+  border-radius: 50px;
+  color: var(--color-base);
+  border: 1px solid var(--color-base);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden; 
+  transition: color 0.3s ease; 
+}
+
+.buttonTwo::before {
+  content: ''; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color:var(--color-base) ; 
+  transform: translateX(-100%); 
+  transition: transform 0.60s ease; 
+  z-index: 0; 
+}
+
+
+.buttonTwo:hover::before {
+  transform: translateX(0); 
+}
+
+.buttonTwo:hover {
+  color: var(--color-secondery); 
+}
+/* SWIPPER */
+.swiper-android .swiper-slide, .swiper-ios .swiper-slide, .swiper-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textDots{
+  font-family: "Inter";
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
