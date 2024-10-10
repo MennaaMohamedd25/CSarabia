@@ -32,13 +32,12 @@ const Header = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
-    // Preload images
-    const loadImages = slides.map((slide) => {
+    // Preload images by creating an Image object and assigning the src
+    slides.forEach((slide) => {
       const img = new Image();
       img.src = slide.image;
-      return img;
     });
-  }, []);
+  }, []); // No need for loadImages variable
 
   useEffect(() => {
     const interval = setInterval(() => {
