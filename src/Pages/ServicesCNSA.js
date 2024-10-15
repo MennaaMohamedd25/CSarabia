@@ -25,14 +25,9 @@ const ServicesCNSA = () => {
         <ServicesCNSAHeader />
       </motion.div>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.2 }}
-        variants={fadeInVariants}
-      >
+   
         <ServicesCNSAMain />
-      </motion.div>
+ 
 
       <motion.div
         initial="hidden"

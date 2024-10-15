@@ -2,7 +2,7 @@ import React from 'react'
 
 const CWSATech = () => {
   return (
-    <div className='w-[95%] mx-auto px-[16px] py-[2.5rem] text-center md:text-left xl:px-[24px] lg:px-[24px] bg-primary rounded-[32px] text-[#FFF]'>
+    <div className='w-[95%] mx-auto text-start px-[16px] py-[2.5rem]  mb-[2.5rem] md:text-left xl:px-[24px] lg:px-[24px] bg-primary rounded-[32px] text-[#FFF]'>
       <h2 className='text-[24px]  font-bold'>Our Technology is offered in two ways</h2>
       <ul className='list-disc ml-5'>
         <li className='my-[24px]'>Skidded Plug and Play Solutions:The Stauper Compact Flotation Unit (CFU) is a highly effective, robust and maintenance free solution for removing oil and gas from produced water.  As part of the Stauper patent portfolio, is also the unique design of having two or more complete cleaning stages in one pressure vessel. As such the Stauper CFU can be tied in directly at separator as the only produced water treatment process required. Where more volume is required, the Stauper Flotation Degasser can be deployed.</li>

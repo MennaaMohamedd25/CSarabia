@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import sliderOne from "../images/headerbg.jpg";
 import sliderTwo from "../images/headerbg4.png"; 
 import sliderThree from "../images/headerbg3.png"; 
+import sliderFour from "../images/ccsa.png"; 
+
 
 // Array of slider content including images, titles, descriptions, and button links
 const slides = [
@@ -15,14 +17,21 @@ const slides = [
   {
     image: sliderTwo,
     title: "CPSA",
-    description: "Pioneering advanced pressure swing adsorption solutions to meet global demands for gas separation efficiency and reliability.",
+    description: "Delivering cutting-edge pressure swing adsorption systems to meet global gas separation demands with reliability and precision.",
     buttonText: "Learn More",
     buttonLink: "/cpsa",
   },
   {
     image: sliderThree,
+    title: "CWSA",
+    description: "Driving sustainability through advanced carbon capture technology, helping industries lower emissions and ensure a greener future.",
+    buttonText: "Learn More",
+    buttonLink: "/cwsa",
+  },
+  {
+    image: sliderFour,
     title: "CCSA",
-    description: "Committed to cutting-edge carbon capture technologies, ensuring a sustainable future with reduced carbon emissions for industries worldwide.",
+    description: "Providing advanced chemical solutions to optimize operational efficiency and elevate performance.",
     buttonText: "Learn More",
     buttonLink: "/ccsa",
   },

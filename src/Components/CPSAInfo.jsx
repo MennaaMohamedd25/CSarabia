@@ -34,7 +34,7 @@ const data = [
 const CPSAInfo = () => {
   return (
     <div className="w-[95%] mx-auto px-[16px] py-[2.5rem] text-center md:text-left xl:px-[24px] lg:px-[24px]rounded-[24px]">
-    <div className="flex flex-col md:flex-row justify-between items-stretch gap-[24px]">
+    <div className="flex flex-col md:flex-row justify-between items-stretch gap-[24px] text-start">
       {/* Loop through the data array to display each section */}
       {data.map((item) => (
         <div

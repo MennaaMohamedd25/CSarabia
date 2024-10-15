@@ -19,12 +19,14 @@ const Atom = () => {
 
   return (
     <div 
-      className="relative bg-cover bg-center h-[1290px] flex items-end justify-between xl:h-[1200px] lg:h-[1200px] md:h-[1200px] " 
+      className="relative bg-cover bg-center  flex h-auto items-end justify-between xl:h-[1200px] lg:h-[1200px] md:h-[1200px]" 
       style={{ backgroundImage: `url(${atombg})` }} 
     >
-   
+      {/* Dark overlay for small and extra small screens */}
+      <div className="absolute inset-0 bg-black opacity-50 md:hidden"></div> {/* Adjust opacity as needed */}
+
       {/* Content */}
-      <div className='relative z-[5px] w-[95%] mx-auto px-[16px] py-[2.5rem] text-center md:text-left xl:px-[24px] lg:px-[24px]'>
+      <div className='relative z-[5] w-[95%] mx-auto px-[16px] py-[2.5rem] text-center md:text-left xl:px-[24px] lg:px-[24px]'>
         <h2 className='text-[20px] font-bold text-[#FFF] w-auto mb-8 xl:w-[550px] xl:text-[32px] lg:w-[548px] lg:text-[32px]'>
           CS Arabia: Pioneering Excellence in Nitrogen, Pipeline, Water, and Chemical Solutions for the Oil and Gas Industry
         </h2>

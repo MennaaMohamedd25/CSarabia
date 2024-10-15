@@ -11,10 +11,11 @@ const Slider = () => {
     require('../images/logo3.png'),
     require('../images/logo4.png'),
     require('../images/logo5.png'),
-    require('../images/logo1.png'),
-    require('../images/logo4.png'),
-    require('../images/logo2.png'),
+    
   ];
+
+  // Create a new array by duplicating the logos for looping effect
+  const duplicatedLogos = [...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos]; // Duplicate for a smooth loop
 
   return (
     <div className='w-[95%] mx-auto shadow-md rounded-[12px] bg-vanish py-[2.0625rem] my-[2.5rem]'>
@@ -25,25 +26,29 @@ const Slider = () => {
           delay: 2000, // 2 seconds delay between slides
           disableOnInteraction: false, // Continue autoplay after interaction
         }}
-        slidesPerView={7.5} // Show 7 full logos and part of another
-        spaceBetween={128} // Set space between slides to 0 for better spacing control
         loop={true} // Enable infinite loop
+        slidesPerView={2} // Default to 2 slides per view for small screens
+        spaceBetween={5} // Space between slides
         breakpoints={{
+          375: {
+            slidesPerView: 2, // Show 2 logos on small screens
+            spaceBetween: 4, // Adjust space between slides
+          },
           640: {
-            slidesPerView: 3.5, // 3 logos on small screens
-            spaceBetween: 10, // Adjust space between slides on small screens
+            slidesPerView: 3, // Show 3 logos on medium small screens
+            spaceBetween: 5, // Space between slides
           },
           768: {
-            slidesPerView: 4.5, // 4 logos on medium screens
-            spaceBetween: 32, // Adjust space between slides on medium screens
+            slidesPerView: 4.5, // Show 4 logos on medium screens
+            spaceBetween: 32, // Space between slides on medium screens
           },
           1024: {
-            slidesPerView: 7.5, // 7 logos on large screens
+            slidesPerView: 7.5, // Show 7 logos on large screens
             spaceBetween: 128, // Space between logos on large screens
           },
         }}
       >
-        {logos.map((logo, index) => (
+        {duplicatedLogos.map((logo, index) => (
           <SwiperSlide key={index} className="flex justify-center items-center">
             <img src={logo} alt={`logo-${index}`} className="mx-auto" /> {/* Center logo */}
           </SwiperSlide>

@@ -30,7 +30,7 @@ const aboutLinks = [
 const Footer = () => {
   return (
     <>
-      <div className='relative my-[2.0625rem] lg:my-[18rem] xl:my-[18rem] w-[95%] mx-auto '>
+      <div className='relative my-[0px] lg:my-[18rem] xl:my-[18rem] w-[95%] mx-auto '>
       <div 
   className="
  
