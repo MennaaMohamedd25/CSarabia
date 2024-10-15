@@ -4,24 +4,24 @@ const ContactMap = () => {
   // Define the map locations
   const locations = [
     {
-      name: "San Francisco",
-      url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.014277758856!2d-122.4064174846813!3d37.78583477975831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c212a37c5%3A0xa76a54be1a52b087!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1632953952186!5m2!1sen!2sus",
+      name: "KSA",
+      url: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d694999.0583378462!2d49.988631!3d26.270716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssa!4v1697559093711!5m2!1sen!2ssa",
     },
     {
-      name: "New York",
-      url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.489215003525!2d-74.0060151846058!3d40.71277527932935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af7b81a71f%3A0x2b8a9f3c4eaf78d4!2sNew+York%2C+NY!5e0!3m2!1sen!2sus!4v1632954477324!5m2!1sen!2sus",
+      name: "USA",
+      url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117229.15620714986!2d-98.1133861!3d30.2700743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644ca64805d0a3f%3A0x4f4f12d36c8f45e1!2sAustin%2C%20TX%2078747%2C%20USA!5e0!3m2!1sen!2sus!4v1632954477324!5m2!1sen!2sus",
     },
     {
-      name: "Los Angeles",
-      url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3357.723312150645!2d-118.2540541847699!3d34.0522353806037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c6ccf49f8cf3%3A0x5c1d2267607f3d7d!2sLos+Angeles%2C+CA!5e0!3m2!1sen!2sus!4v1632954522581!5m2!1sen!2sus",
+      name: "Canada",
+      url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9365601.73915857!2d-139.5155813!3d51.4134686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5378d4cfdded7a97%3A0x95cdb124598041b4!2s51%C2%B024%2748.5%22N%20114%C2%B001%2740.1%22W!5e0!3m2!1sen!2sus!4v1694614902855!5m2!1sen!2sus",
     },
     {
-      name: "Paris",
-      url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2610.293124914541!2d2.292292116053543!3d48.85884437928748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdc5c5e9f1f%3A0x12bf9bf6431b3307!2sEiffel+Tower!5e0!3m2!1sen!2sus!4v1632954552387!5m2!1sen!2sus",
+      name: "Iraq",
+      url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d173856.682944338!2d44.17988824359794!3d33.30159232513862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15578198d3f1c6b7%3A0x5a8f32fa65e16e9f!2sBaghdad!5e0!3m2!1sen!2sus!4v1632954444876!5m2!1sen!2sus",
     },
     {
-      name: "London",
-      url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1454.706460511107!2d-0.1276475503341006!3d51.50735098631756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b3229357e55%3A0xa1ac6d41623a5b63!2sLondon%2C+UK!5e0!3m2!1sen!2sus!4v1632954584626!5m2!1sen!2sus",
+      name: "kuwait",
+      url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5915.632751332516!2d48.11457388021535!3d28.993529681802994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf08d319b6f5c7%3A0x3cfb7518e3c1fa0d!2sKuwait!5e0!3m2!1sen!2sus!4v1632954584626!5m2!1sen!2sus",
     },
   ];
 
@@ -39,7 +39,7 @@ const ContactMap = () => {
     <button
       key={index}
       onClick={() => setCurrentMap(location.url)}
-      className="px-[3px] py-[13px] text-[16px] border border-gray-500 text-gray-500 rounded-md hover:bg-primary hover:text-white focus:outline-none focus:border-red-500 focus:text-red-500 active:bg-red-500 active:border-red-500 active:text-white transition-colors duration-300"
+      className="px-[32px] py-[13px] text-[14px] border border-gray-500 text-gray-500 rounded-md hover:bg-primarye focus:outline-none focus:border-red-500 focus:text-red-500 active:bg-red-500 active:border-red-500 active:text-white transition-colors duration-300"
     >
       {location.name}
     </button>
