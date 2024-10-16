@@ -44,8 +44,8 @@ function App() {
           <Route path="nitrogena" element={<Nitrogen />} />
           <Route path="mothballing" element={<Mothballing />} />
           <Route path="air" element={<Air />} />
-          <Route path="gauging" element={<Gauging />} />
-          <Route path="inspection" element={<Inspection />} />
+          <Route path="gauging" element={<Gauging/>} />
+          <Route path="inspection" element={<Inspection/>} />
           <Route path="cpsa" element={<CPSAPage />} />
           <Route path="cwsa" element={<CWSAPage />} />
           <Route path="ccsa" element={<CCSAPage />} />

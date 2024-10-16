@@ -33,7 +33,7 @@ const services = [
   { id: 6, image: serviceSix, description: "Air Drying", url: '/air' },
   { id: 7, image: serviceSeven, description: "Pipeline Scrapper Mechanical Cleaning & Gauging", url: '/gauging' },
   { id: 8, image: serviceEight, description: "Inline Inspection of Pipelines", url: '/inspection' },
-  { id: 9, image: serviceNine, description: "De-Cruding: Using water and nitrogen.", url: '/service/water-nitrogen' },
+  { id: 9, image: serviceNine, description: "De-Cruding: Using water and nitrogen.", url: '/nitrogen' },
 ];
 
 const ServicesCNSAMain = () => {
@@ -158,7 +158,7 @@ const ServicesCNSAMain = () => {
                     alt='Service'
                     className="w-full h-auto object-cover rounded-lg"
                   />
-                  <Link to={`/service/${service.id}`} className="absolute top-4 right-4 w-[40px] h-[40px] bg-primary text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <Link to={service.url}  className="absolute top-4 right-4 w-[40px] h-[40px] bg-primary text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                     <ArrowRightIcon className='w-6 h-6' />
                   </Link>
                   <p className="absolute bottom-0 left-0 w-full text-white text-center p-4 font-semibold text-[16px] md:text-[20px]">
