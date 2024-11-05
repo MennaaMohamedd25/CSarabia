@@ -1,7 +1,7 @@
 import React from 'react';
 import headerBgImage from '../images/headerbg4.png'; // Import your background image
 import { Link } from 'react-router-dom';
-
+import CPSALogo from "../images/Group 11.svg";
 
 const CPSAHeader = () => {
   return (
@@ -12,24 +12,7 @@ const CPSAHeader = () => {
     }}
   >
     <div className="absolute inset-0 flex flex-col items-center justify-center h-full px-[16px]">
-      <h1
-        className="
-          text-[80px]
-          text-center
-          font-extrabold
-          leading-[100%]
-          text-[#FFF]
-          m-0
-          md:text-[120px] 
-          lg:text-[180px]   
-          xl:text-[200px]    
-        "
-        style={{
-          mixBlendMode: "exclusion",
-        }}
-      >
-        CPSA
-      </h1>
+   <img src={CPSALogo} alt='cpsa' />
 
       <p
         className="
@@ -43,7 +26,7 @@ const CPSAHeader = () => {
           xl:w-[832px]  xl:text-[20px]  
         "
       >
-We connect pipeline without welding      </p>
+Welding-Free Pipeline Connections Through Positive Seal Coupling     </p>
       <Link to='/contact-us' className="buttonTwo">
         <span className="buttonText">Contact Us</span>
       </Link>

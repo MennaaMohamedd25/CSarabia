@@ -7,18 +7,18 @@ const OurCategory = () => {
   const categories = [
     { 
       image: workOne, 
-      title: 'Skilled Engineers', 
-      description: 'Our team of highly trained engineers brings unparalleled expertise to every project, ensuring innovative solutions and precision in execution.' 
+      title: 'SKILL', 
+      description: 'Work with the industry’s finest chemical engineers, nitrogen service specialists, and water treatment experts who prioritize safety, quality, and technical precision in everything they do.' 
     },
     {  
       image: workTwo, 
-      title: 'Modern Machines', 
-      description: 'Equipped with the latest in technology, our modern machines enable us to tackle complex challenges with efficiency and reliability.' 
+      title: 'TECHNOLOGY', 
+      description: 'CS ARABIA spares no expense in procuring the most sophisticated machinery and technology to ensure we can deliver the results you expect without unnecessary setbacks or delays.' 
     },
     {  
       image: workThree, 
-      title: 'Quality Service', 
-      description: 'Quality Service At the core of CSARABIA, we are committed to delivering exceptional service, characterized by meticulous attention to detail and a steadfast dedication to excellence.' 
+      title: 'QUALITY', 
+      description: 'Service excellence is the lifeblood that pulses at the heart of the CS ARABIA anatomy. We are obsessed with attention to detail, leaving no stone unturned to deliver non-negotiable brilliance.' 
     },
     // Add more categories as needed
   ];

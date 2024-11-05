@@ -1,22 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import pdfIcon from '../images/pdf.png';
 
 // Import the PDFs
-import pdfOne from '../Pdfs/iso9001.pdf';
-import pdfTwo from '../Pdfs/iso45001.pdf';
-import pdfThree from '../Pdfs/iso14001.pdf';
-import pdfFour from '../Pdfs/QUALITY MANUAL.pdf';
-import pdfFive from '../Pdfs/Health, Safety and Environment Policy.pdf';
-import pdfSix from '../Pdfs/HEALTH & SAFETY MANUAL.pdf';
-import pdfSeven from '../Pdfs/Gifts and Hospitality Policy.pdf';
-import pdfEight from '../Pdfs/Conflict of Interest Policy.pdf';
-import pdfNine from '../Pdfs/Code of Conduct Policy.pdf';
-import pdfTen from '../Pdfs/Anti Corruption Policy.pdf';
-import Annual from '../Pdfs/Surfactant Based Chemical cleaning.docx';
-import Sustainability from '../Pdfs/Understanding How the Compact Flotation Unit Works.docx';
-import Statistical from '../Pdfs/Understanding How the Nitrogen Generation Unit Works.docx';
-import Energy from '../Pdfs/Understanding How the Positive Seal Coupling Works.docx';
-
+import Anti from '../Pdfs/Anti Corruption Policy.pdf';
+import Conduct from '../Pdfs/Code of Conduct Policy.pdf';
+import Conflict from '../Pdfs/Conflict of Interest Policy.pdf';
+import Gifts from '../Pdfs/Gifts and Hospitality Policy.pdf';
+import Health from '../Pdfs/HEALTH & SAFETY MANUAL.pdf';
+import HealthPolicy from '../Pdfs/Health, Safety and Environment Policy.pdf';
+import IsoOne from '../Pdfs/ISO - 14001.pdf';
+import IsoTwo from '../Pdfs/ISO - 45001.pdf';
+import IsoThree from '../Pdfs/ISO - 9001.pdf';
+import Quaility from '../Pdfs/QUALITY MANUAL.pdf';
+import Chimical from '../Pdfs/Surfactant Based Chemical cleaning.docx';
+import Flotaion from '../Pdfs/Understanding How the Compact Flotation Unit Works.docx';
+import Nitrogin from '../Pdfs/Understanding How the Nitrogen Generation Unit Works.docx';
+import Seal from '../Pdfs/Understanding How the Positive Seal Coupling Works.docx';
 // Function to download a specific PDF
 const downloadPdf = (pdfFile, fileName) => {
   const link = document.createElement('a');
@@ -27,55 +26,14 @@ const downloadPdf = (pdfFile, fileName) => {
   document.body.removeChild(link);
 };
 
-// Accordion Component
-const Accordion = ({ title, content, isOpen, onToggle }) => {
-  return (
-    <div className='rounded-[32px] overflow-hidden transition-all duration-300 ease-in-out'>
-      <div
-        className='flex justify-between items-center px-[40px] py-[30px] cursor-pointer bg-vanish'
-        onClick={onToggle}
-      >
-        <h3 className='font-medium text-secondery'>{title}</h3>
-        <span className='text-2xl text-secondery'>
-          {isOpen ? '-' : '+'}
-        </span>
-      </div>
-      <div
-        className={`px-[40px] bg-vanish text-sm text-ts overflow-hidden transition-all duration-500 ease-in-out text-start ${isOpen ? 'max-h-[1000px] pb-[32px]' : 'max-h-0 pb-0'}`}
-      >
-        {isOpen && (
-          <div>{content}</div>
-        )}
-      </div>
-    </div>
-  );
+// Function to download multiple PDFs (ISO series)
+const downloadAllIsos = () => {
+  downloadPdf(IsoOne, 'ISO-14001.pdf');
+  downloadPdf(IsoTwo, 'ISO-45001.pdf');
+  downloadPdf(IsoThree, 'ISO-9001.pdf');
 };
 
-// Function to download all PDFs
-const downloadAllPdfs = () => {
-  const pdfFiles = [
-    pdfOne, pdfTwo, pdfThree, pdfFour, pdfFive, 
-    pdfSix, pdfSeven, pdfEight, pdfNine, pdfTen
-  ];
-
-  pdfFiles.forEach((pdfFile, index) => {
-    const link = document.createElement('a');
-    link.href = pdfFile;
-    link.download = `document_${index + 1}.pdf`; // Customize the file name if needed
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  });
-};
-
-// Main Publication Component
 const Publication = () => {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const handleToggle = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   // Approximate PDF sizes (replace with actual sizes)
   const pdfSizes = {
     all: "15MB",
@@ -83,7 +41,9 @@ const Publication = () => {
     sustainability: "900KB",
     statistical: "850KB",
     energyOutlook: "1.1MB",
-    chairmanMessage: "700KB"
+    menna:'2.4MB',
+    Conduct:'3.1',
+    gifts:'1.5'
   };
 
   return (
@@ -91,37 +51,36 @@ const Publication = () => {
       <h2 className='text-4xl md:text-5xl lg:text-6xl xl:text-[80px] font-bold text-secondery mb-[2.5rem]'>Publications</h2>
 
       <div className='flex flex-col md:flex-row md:gap-6'>
-        {/* Accordion Section */}
+        {/* First Column with Downloadable Titles */}
         <div className='flex-1 flex flex-col justify-between space-y-[8px] mb-6 md:mb-0 md:mr-4'>
-          <Accordion
-            title="Petroleum Engineering"
-            content="Synergistically build professional communities vis-a-vis best-of-breed paradigms. Quickly empower world-class networks with prospective methodologies."
-            isOpen={openIndex === 0}
-            onToggle={() => handleToggle(0)}
-          />
-          <Accordion
-            title="International Trade"
-            content="Synergistically build professional communities vis-a-vis best-of-breed paradigms. Quickly empower world-class networks with prospective methodologies."
-            isOpen={openIndex === 1}
-            onToggle={() => handleToggle(1)}
-          />
-          <Accordion
-            title="Chemicals and Refining"
-            content="Synergistically build professional communities vis-a-vis best-of-breed paradigms. Quickly empower world-class networks with prospective methodologies."
-            isOpen={openIndex === 2}
-            onToggle={() => handleToggle(2)}
-          />
+          {[
+            { title: "Understanding how the Nitrogen Generation Unit works", pdf: Nitrogin, fileName: 'Nitrogen_Generation.pdf' },
+            { title: "Understanding how the Positive Seal coupling works", pdf: Seal, fileName: 'Positive_Seal_Coupling.pdf' },
+            { title: "Understanding how the Compact Floatation Unit works", pdf: Flotaion, fileName: 'Compact_Floatation_Unit.pdf' },
+            { title: " How the Surfactant Chemical Cleaning is carried out", pdf: Chimical, fileName: 'Surfactant_Cleaning.pdf' },
+          ].map((doc, index) => (
+            <div
+              key={index}
+              className='rounded-[32px] overflow-hidden transition-all duration-300 ease-in-out cursor-pointer'
+              onClick={() => downloadPdf(doc.pdf, doc.fileName)}
+            >
+              <div className='flex justify-between items-center px-[40px] py-[30px] bg-vanish'>
+                <h3 className='font-medium text-secondery text-[16px]'>{doc.title}</h3>
+                <span><img src={pdfIcon} alt='pdf' className='w-[30px]' /></span>
+              </div>
+            </div>
+          ))}
         </div>
 
-        {/* Download PDF Section */}
+        {/* Second Column for Other Downloads */}
         <div className="flex-1 space-y-[2rem] bg-vanish rounded-[32px] p-[2.5rem] flex flex-col justify-between">
           {/* Download All PDFs Button */}
           <div className='flex items-center justify-between'>
-            <button className='flex items-center menna' onClick={downloadAllPdfs}>
+            <div className='flex items-center' >
               <span><img src={pdfIcon} alt='pdf' className='w-[33.33px]' /></span>
               <span className='ml-3 text-[16px] font-[700] lg:text-[24px] xl:text-[24px]'>Download PDF</span>
-            </button>
-            <span className='text-secondery'>{pdfSizes.all}</span>
+            </div>
+         
           </div>
 
           <hr className='border-gray-300 my-[2rem]' />
@@ -132,38 +91,62 @@ const Publication = () => {
           <div className='flex flex-col space-y-6'>
             {/* Annual Report Button */}
             <div className='flex items-center justify-between'>
-              <button className='flex items-center' onClick={() => downloadPdf(Annual, 'Annual_Report.pdf')}>
+            <button className='flex items-center' onClick={downloadAllIsos}>
                 <span><img src={pdfIcon} alt='pdf' className='w-[30px]' /></span>
-                <span className='ml-3 text-secondery'>Annual Report</span>
-              </button>
-              <span className='text-secondery'>{pdfSizes.annual}</span>
-            </div>
-
-            {/* Sustainability Report Button */}
-            <div className='flex items-center justify-between'>
-              <button className='flex items-center' onClick={() => downloadPdf(Sustainability, 'Sustainability_Report.pdf')}>
-                <span><img src={pdfIcon} alt='pdf' className='w-[30px]' /></span>
-                <span className='ml-3 text-secondery'>Sustainability Report</span>
+                <span className='ml-3 text-secondery'>ISO</span>
               </button>
               <span className='text-secondery'>{pdfSizes.sustainability}</span>
             </div>
 
-            {/* Statistical Report Button */}
+            {/* Sustainability Report Button */}
             <div className='flex items-center justify-between'>
-              <button className='flex items-center' onClick={() => downloadPdf(Statistical, 'Statistical_Report.pdf')}>
+              <button className='flex items-center' onClick={() => downloadPdf(Quaility, 'Quaility_Report.pdf')}>
                 <span><img src={pdfIcon} alt='pdf' className='w-[30px]' /></span>
-                <span className='ml-3 text-secondery'>Statistical Report</span>
+                <span className='ml-3 text-secondery'>Quality Manual</span>
               </button>
               <span className='text-secondery'>{pdfSizes.statistical}</span>
             </div>
 
-            {/* Energy Outlook Button */}
+            {/* Statistical Report Button */}
             <div className='flex items-center justify-between'>
-              <button className='flex items-center' onClick={() => downloadPdf(Energy, 'Energy_Outlook.pdf')}>
+              <button className='flex items-center' onClick={() => downloadPdf(HealthPolicy, 'HealthPolicy_Report.pdf')}>
                 <span><img src={pdfIcon} alt='pdf' className='w-[30px]' /></span>
-                <span className='ml-3 text-secondery'>Energy Outlook</span>
+                <span className='ml-3 text-secondery'>Anti corruption policy</span>
               </button>
               <span className='text-secondery'>{pdfSizes.energyOutlook}</span>
+            </div>
+
+            {/* Energy Outlook Button */}
+            <div className='flex items-center justify-between'>
+              <button className='flex items-center' onClick={() => downloadPdf(Gifts, 'Gifts.pdf')}>
+                <span><img src={pdfIcon} alt='pdf' className='w-[30px]' /></span>
+                <span className='ml-3 text-secondery'>Code of Conduct</span>
+              </button>
+              <span className='text-secondery'>{pdfSizes.menna}</span>
+            </div>
+             {/* Energy Outlook Button */}
+            <div className='flex items-center justify-between'>
+              <button className='flex items-center' onClick={() => downloadPdf(Conduct, 'Conflict.pdf')}>
+                <span><img src={pdfIcon} alt='pdf' className='w-[30px]' /></span>
+                <span className='ml-3 text-secondery'>Conflict of Interest</span>
+              </button>
+              <span className='text-secondery'>{pdfSizes.Conduct}</span>
+            </div>
+             {/* Energy Outlook Button */}
+             <div className='flex items-center justify-between'>
+              <button className='flex items-center' onClick={() => downloadPdf(Gifts, 'Energy_Outlook.pdf')}>
+                <span><img src={pdfIcon} alt='pdf' className='w-[30px]' /></span>
+                <span className='ml-3 text-secondery'>Gifts and Hospitality</span>
+              </button>
+              <span className='text-secondery'>{pdfSizes.gifts}</span>
+            </div>
+               {/* Energy Outlook Button */}
+               <div className='flex items-center justify-between'>
+              <button className='flex items-center' onClick={() => downloadPdf(Health, 'Energy_Outlook.pdf')}>
+                <span><img src={pdfIcon} alt='pdf' className='w-[30px]' /></span>
+                <span className='ml-3 text-secondery text-start'>Health and Safety for Environment policy</span>
+              </button>
+              <span className='text-secondery'>{pdfSizes.annual}</span>
             </div>
           </div>
         </div>

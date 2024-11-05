@@ -9,6 +9,7 @@ const data = [
     title: 'Our Vision',
     icon: eyeIcon,
     list: [
+      'To nurture long-standing client relationships, and establish new ones, anchored in trust, a devotion to mutual success, and a shared commitment to environmental sustainability.',
       'Innovation: Constantly developing and integrating cutting-edge technologies.',
       'Sustainability: Prioritizing environmentally responsible practices and solutions.',
       'Excellence: Maintaining the highest standards of quality and safety in all operations.',
@@ -22,6 +23,7 @@ const data = [
     title: 'Our Mission',
     icon: mapIcon,
     list: [
+      'To maintain our decade-strong stance as the region’s leading provider of premium industrial service solutions, for the benefit of our international client base.',
       'Empowerment: Providing advanced solutions that enhance operational efficiency.',
       'Partnerships: Building long-term relationships based on trust and mutual success.',
       'Expertise: Leveraging deep industry knowledge and technical proficiency.',
@@ -36,7 +38,7 @@ const data = [
 
 const MissionMain = () => {
   return (
-    <div className="w-[95%] mx-auto px-[16px] py-[2.5rem] text-center md:text-left xl:px-[24px] lg:px-[24px]">
+    <div className="w-[95%] mx-auto  py-[2.5rem]  text-left ">
       <div className="flex flex-col md:flex-row justify-between items-stretch gap-[24px]">
         {/* Loop through the data array to display each section */}
         {data.map((item) => (

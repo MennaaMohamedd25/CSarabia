@@ -6,12 +6,32 @@ import { Autoplay } from 'swiper/modules'; // Correct module import
 
 const Slider = () => {
   const logos = [
-    require('../images/logo1.png'),
-    require('../images/logo2.png'),
-    require('../images/logo3.png'),
-    require('../images/logo4.png'),
-    require('../images/logo5.png'),
-    
+    require('../images/Nesma Partners.png'),
+    require('../images/qur.png'),
+    require('../images/Rezyat Group.jpg'),
+    require('../images/ROSEN Group.jpg'),
+    require('../images/Saudi Aramco.png'),
+    require('../images/3- Saudi Chevron Phillips Company.jpg'),
+    require('../images/4- China Petroleum & Chemical Corporation.png'),
+    require('../images/Kuwait Joint Operation.jpg'),
+    require('../images/12-New-Jobs-Vacancies-at-China-Petroleum-Pipeline-Engineering-Tanzania-CPP.png'),
+    require('../images/al fanar.png'),
+    require('../images/Al-Rushaid Construction Co. Ltd (ARCC).jpg'),
+    require('../images/AL RASHID TRADIN &  CONTRACTING CO.LTD RTCC (6).jpg'),
+    require('../images/Contracting and Trading Company.jpg'),
+    require('../images/den.png'),
+    require('../images/Kent.png'),
+    require('../images/Kuwait Joint Operation.jpg'),
+    require('../images/Larsen & Toubro (10).jpg'),
+    require('../images/NASSER S. AL-HAJRI CORP. NSH (13).jpg'),
+    require('../images/Saudi Aramco.png'),
+    require('../images/Tecnicas Reunidas (1).jpg'),
+    require('../images/Zamil Offshore (9).jpg'),
+    require('../images/ZOMCO (8).jpg'),
+    require('../images/SAIPEM.png'),
+    require('../images/SEPCO.jpg'),
+    require('../images/SISCO.png'),
+    require('../images/Surveyer, Nenniger & Chenevert.png'),
   ];
 
   // Create a new array by duplicating the logos for looping effect

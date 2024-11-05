@@ -4,28 +4,28 @@ import Doots from '../images/doots.png';
 const approaches = [
     {
       id: 1,
-      title: 'Comprehensive Pipeline Services',
-      description: 'CNSA delivers end-to-end nitrogen solutions for pipeline integrity management, from meticulous pre-commissioning to strategic maintenance operations, ensuring longevity and optimal performance.',
+      title: 'Optimize Pipeline Integrity:',
+      description: 'From pre-commissioning to proactive pipeline maintenance, our skilled team will evaluate the integrity of your nitrogen-filled pipelines to ensure efficacy, cleanliness, and system reliability.',
     },
     {
       id: 2,
-      title: 'Excellence in Quality and Safety',
-      description: 'Our unwavering dedication to quality drives us to exceed customer expectations consistently, prioritizing safety and reliability in every service we provide.',
+      title: 'Contaminant Protection:',
+      description: 'Seal your pipeline’s defense by repelling harmful contaminants through nitrogen inertion, blanketing, and purging',
     },
     {
       id: 3,
-      title: 'Technological Edge',
-      description: 'Equipped with advanced mobile high-pressure nitrogen units and LN2 tanks featuring ambient vaporizers, CNSA is poised to efficiently satisfy a broad spectrum of client requirements.',
+      title: 'Prevent Leaks:',
+      description: 'Through accurate and cost-effective nitrogen leak detection, our proficient engineers can quickly pinpoint precise leak locations for rapid intervention and rectification.',
     },
     {
       id: 4,
-      title: 'Team of Specialists',
-      description: 'Our cadre of extensively trained professionals stands ready to address the most intricate challenges in pipeline nitrogen services with expertise and precision.',
+      title: 'Avoid Corrosion & Combustion Risk',
+      description: 'Create an oxygen-free atmosphere that prevents oxidation and rust, while significantly extending pipeline lifespan and performance.',
     },
     {
         id: 5,
-        title: 'Endorsed by Excellence',
-        description: 'Proud to be an Aramco-approved vendor, CNSA aligns its operations with the pinnacle of industry standards and best practices for assured service quality.',
+        title: 'Eliminate Moisture:',
+        description: 'Purging nitrogen is the most effective way to remove water vapor and control moisture, creating the dryest possible environment for optimal nitrogen flow.',
       }
   ];
 

@@ -1,23 +1,26 @@
-import React from 'react'
+import React from "react";
 
 const TeamHeader = () => {
   return (
-    <div className='w-[95%] mx-auto text-center px-[16px] py-10 my-[5rem] xl:mt-[6rem] lg:mt-[6rem] md:mt-[6rem]'>
-    {/* Red dot with text */}
-    <div className="flex items-center mb-4 justify-center">
+    <div className="w-[95%] mx-auto text-center px-[16px] py-10 my-[8rem] xl:mt-[10rem] lg:mt-[10rem] md:mt-[8rem]">
+      {/* Red dot with text */}
+      <div className="flex items-center mb-4 justify-center">
         <span className="w-[8px] h-[8px] bg-primary  rounded-full mr-2"></span>
         <p className="text-secondery  ">Our Team</p>
       </div>
 
-    {/* H2 heading */}
-    <h2 className="text-[24px] font-bold my-[2.5rem] xl:text-[60px] lg:text-[60px] md:text-[50px]">
-    "Transform premier infrastructures with functional metrics. Drive sustainable <span className='text-primary'>leadership</span> for economic growth."    </h2>
+      {/* H2 heading */}
+      <h2 className="text-[24px] font-bold my-[2.5rem] xl:text-[70px] lg:text-[70px] md:text-[50px]">
+        "Bringing <span className="text-primary">Skilled</span> Engineers to
+        Your Project."{" "}
+      </h2>
 
-    {/* Lorem text */}
-    <p className="text-[20px] opacity-[0.4]">
-    "Create standardized communities with seamless applications and optimize supply chains without vertical initiatives. Build strategic relationships using error-free processes, while outsourcing through functional e-markets. Simplify user-friendly architectures across media, utilizing empowered data and human capital.    </p>
-  </div>
-  )
-}
+      {/* Lorem text */}
+      <p className="text-[20px] opacity-[0.4]">
+      Only the finest engineers pass CS ARABIA’s meticulous hiring and vetting process. We invite deeply skilled and rigorously trained industrial specialists to join our team, working collaboratively to set industry benchmarks that others strive to replicate. You can learn more about these remarkable industry veterans below. Their cross-sector experience helps us do more for the client pool we serve, supporting sustainable growth and extraordinary operational success, today and tomorrow
+      </p>
+    </div>
+  );
+};
 
-export default TeamHeader
+export default TeamHeader;

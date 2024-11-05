@@ -8,20 +8,9 @@ import serviceSix from '../images/serv6.png';
 import serviceSeven from '../images/serv7.png';
 import serviceEight from '../images/serv8.png';
 import serviceNine from '../images/serv9.png';
-import pdf from '../images/pdf.svg'; // Ensure you import the PDF icon image
 import { Link, useLocation } from 'react-router-dom';
 import { ArrowRightIcon } from '@heroicons/react/24/solid'; 
-import pdfOne from '../Pdfs/iso9001.pdf';
-import pdfTwo from '../Pdfs/iso45001.pdf';
-import pdfThree from '../Pdfs/iso14001.pdf';
-import pdfFour from '../Pdfs/QUALITY MANUAL.pdf';
-import pdfFive from '../Pdfs/Health, Safety and Environment Policy.pdf';
-import pdfSix from '../Pdfs/HEALTH & SAFETY MANUAL.pdf';
-import pdfSeven from '../Pdfs/Gifts and Hospitality Policy.pdf';
-import pdfEight from '../Pdfs/Conflict of Interest Policy.pdf';
-import pdfNine from '../Pdfs/Code of Conduct Policy.pdf';
-import pdfTen from '../Pdfs/Anti Corruption Policy.pdf';
-import Annual from '../Pdfs/Surfactant Based Chemical cleaning.docx';
+
 
 // Array holding service data
 const services = [
@@ -40,29 +29,29 @@ const ServicesCNSAMain = () => {
   const location = useLocation(); // Get current location
 
   // Download PDF
-  const handleDownloadAll = () => {
-    const pdfFiles = [
-      pdfOne,
-      pdfTwo,
-      pdfThree,
-      pdfFour,
-      pdfFive,
-      pdfSix,
-      pdfSeven,
-      pdfEight,
-      pdfNine,
-      pdfTen,
-      Annual
-    ];
-    pdfFiles.forEach((pdfFile) => {
-      const link = document.createElement('a');
-      link.href = pdfFile;
-      link.download = pdfFile.split('/').pop(); // Use the file name as the download name
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    });
-  };
+  // const handleDownloadAll = () => {
+  //   const pdfFiles = [
+  //     pdfOne,
+  //     pdfTwo,
+  //     pdfThree,
+  //     pdfFour,
+  //     pdfFive,
+  //     pdfSix,
+  //     pdfSeven,
+  //     pdfEight,
+  //     pdfNine,
+  //     pdfTen,
+  //     Annual
+  //   ];
+  //   pdfFiles.forEach((pdfFile) => {
+  //     const link = document.createElement('a');
+  //     link.href = pdfFile;
+  //     link.download = pdfFile.split('/').pop(); // Use the file name as the download name
+  //     document.body.appendChild(link);
+  //     link.click();
+  //     document.body.removeChild(link);
+  //   });
+  // };
 
   return (
     <div className='bg-vanish'>
@@ -93,20 +82,7 @@ const ServicesCNSAMain = () => {
               </div>
             </div>
 
-            <div className='bg-[#FFF] shadow-md rounded-[24px] p-6 text-start mt-[40px] mb-[40px]'>
-              <h3 className="text-lg font-semibold p-[16px]">Brochures and flyers</h3>
-              <div className='w-full h-[1px] bg-[#F0F4F8] my-[24px]'></div>
-              <button className='flex items-center justify-between bg-primary text-white p-[16px] rounded-[16px] cursor-pointer' onClick={handleDownloadAll}>
-                <div className='flex items-center space-x-2'>
-                  <img 
-                    src={pdf} 
-                    alt='Download Icon' 
-                  />
-                  <span>Download</span>
-                </div>
-                <span className='text-white'>15M</span>
-              </button>
-            </div>
+ 
           </div>
 
           {/* Main Content */}

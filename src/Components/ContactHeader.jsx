@@ -11,8 +11,9 @@ const ContactHeader = () => {
 
     {/* H2 heading */}
     <h2 className="text-[24px] font-bold my-[2.5rem] xl:text-[60px] lg:text-[60px] md:text-[50px] text-center">
-    Contact us here for help. </h2>
-
+    Choose Excellence. Choose CS ARABIA. </h2>
+    <p className="text-[20px] opacity-[0.4] text-center">
+    Connect with our industry leaders to see how we can apply our flexible solutions to your business and sector. We have worked hard to achieve the premier status we enjoy today, and we will never stop working to maintain it    </p>
 
   </div>
   )

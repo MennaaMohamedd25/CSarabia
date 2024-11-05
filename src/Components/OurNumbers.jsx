@@ -6,10 +6,10 @@ import iconFour from '../images/Vector4.png';
 
 const OurNumbers = () => {
   const numbersData = [
-    { images: iconOne, title: '100+', description: ' Assets' },
-    { images: iconTwo, title: '140+', description: ' Team members' },
-    { images: iconThree, title: '120+', description: ' Clients' },
-    { images: iconFour, title: '1137+', description: ' Projects' },
+    { images: iconOne, title: '100+', description: ' AramcoApproved' },
+    { images: iconTwo, title: '140+', description: ' International Team Members' },
+    { images: iconThree, title: '120+', description: ' Clients Served Worldwide' },
+    { images: iconFour, title: '12+', description: ' Years of Experience' },
   ];
 
   return (

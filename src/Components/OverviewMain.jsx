@@ -20,13 +20,12 @@ const OverviewMain = () => {
 
           {/* Heading */}
           <h2 className="my-[2.5rem] text-[16px] xl:text-[20px] lg:text-[20px] text-start">
-            "Empowering People, Fostering Excellence, Together as Family."
+          For over a decade, CS ARABIA has illuminated the path for cross-sector industrial services and solutions. As undisputed industry leaders in nitrogen services, pipeline solutions, produced water management, and advanced chemical cleaning, CS Arabia brings strategic expertise and cuttingedge innovation to clients Kingdom-wide.
           </h2>
 
           {/* Lorem ipsum text */}
           <p className="text-[16px] xl:text-[20px] lg:text-[20px] text-start">
-            At CS Arabia, we pride ourselves on fostering a company culture that feels like a family. Our culture is built on mutual respect, collaboration, and a shared commitment to excellence. We believe that our people are our greatest asset, and we are dedicated to their growth and development in both transformational and transactional ways.
-          </p>
+          With our commitment to lowering your costs and increasing process-critical up-time, it’s clear to see why CS ARABIA is number one locally and regionwide.          </p>
         </div>
       </div>
     </div>

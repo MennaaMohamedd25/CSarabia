@@ -6,9 +6,10 @@ import {
   ChevronUpIcon,
 } from "@heroicons/react/24/outline";
 import logo from "../images/OBJECTS.svg";
-import Icon1 from "../images/Frame.svg";
-import Icon2 from "../images/Frame (1).svg";
-import Icon3 from "../images/Frame (2).svg";
+import servOne from "../images/sevlogo.svg";
+import servTwo from "../images/sevlogo2.svg";
+import servThree from "../images/sevlogo3.svg";
+import servFour from "../images/sevlogo4.svg";
 import Icon4 from "../images/Frame (3).svg";
 import { Link } from "react-router-dom";
 
@@ -29,45 +30,36 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-[95%] mx-auto shadow-md rounded-[12px] px-[24px] fixed top-5 py-5 bg-[#1A1A1A] xl:bg-[rgba(28,28,28,0.80)] xl:py-[10px] lg:xl:bg-[rgba(28,28,28,0.80)] lg:py-[10px] z-10 inset-x-0">
+    <nav className="w-[95%] mx-auto shadow-md rounded-[12px] px-[24px] fixed top-5 py-5 bg-[#1A1A1A] xl:bg-[rgba(28,28,28,0.80)] xl:py-[10px] lg:xl:bg-[rgba(28,28,28,0.80)] lg:py-[10px] z-10 inset-x-0 ">
       <div className="flex justify-between items-center">
         <div className="flex items-center space-x-10">
           {/* Logo */}
-      <Link to='/'  >    <img src={logo} alt="logo" /></Link>
+          <Link to='/' className="flex flex-col  space-y-[0.8rem]">
+  <div className="flex-shrink-0">
+    <img src={logo} alt="logo" className="ml-[5px] xl:ml-0 lg:ml-0 md:ml-0"/> {/* Adjust width and height as needed */}
+  </div>
+  <p className="text-white hidden md:flex">Continuous Services Arabia</p>
+</Link>
+<div className="h-[25px] w-[2px] border-l-4 border-ts mt-2 hidden md:flex"></div> {/* Vertical line */}
+
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 items-center">
             <Link to="/" className="text-[#FFFFFF]">
-              Home
+              Home 
             </Link>
-            <div className="relative">
-              <button
-                onClick={() => toggleDropdown("services")}
-                className="text-[#FFFFFF] flex items-center"
-              >
-                Services
-                {activeDropdown === "services" ? (
-                  <ChevronUpIcon className="h-5 w-5 ml-1" />
-                ) : (
-                  <ChevronDownIcon className="h-5 w-5 ml-1 " />
-                )}
-              </button>
-              {activeDropdown === "services" && (
-                <div className="absolute bg-[#1A1A1A] text-[#FFF] shadow-md mt-5 rounded-2xl py-5">
-                  <Link to="services-cnsa" className="block px-4 py-2 hover:bg-primary w-40">
-                    CNSA
-                  </Link>
-                  <Link to="cpsa" className="block px-4 py-2 hover:bg-primary w-40">
-                    CPSA
-                  </Link>
-                  <Link to="ccsa" className="block px-4 py-2 hover:bg-primary w-40">
-                    CCSA
-                  </Link>
-                  <Link to="cwsa" className="block px-4 py-2 hover:bg-primary w-40">
-                    CWSA
-                  </Link>
-                </div>
-              )}
-            </div>
+          
+              <Link to="ccsa" >
+            <img src={servOne} alt="ccsa" className="w-[65px] "/>
+            </Link>
+            <Link to="services-cnsa"  >
+            <img src={servTwo} alt="cnsa" className="w-[65px] "/>
+            </Link>
+            <Link to="cpsa" className="">
+            <img src={servThree} alt="cpsa" className="w-[65px] "/>
+            </Link>
+            <Link to="cwsa" >
+            <img src={servFour} alt="cwsa" className="w-[65px] "/>
+            </Link>
             <div className="relative">
               <button
                 onClick={() => toggleDropdown("about")}
@@ -81,7 +73,7 @@ const Navbar = () => {
                 )}
               </button>
               {activeDropdown === "about" && (
-                <div className="absolute bg-[#1A1A1A] text-[#FFF] shadow-md mt-5 rounded-2xl py-5">
+                <div className="absolute bg-[#1A1A1A] text-[#FFF] shadow-md mt-8 rounded-2xl py-5">
                   <Link to="company-overview" className="block px-4 py-2 hover:bg-primary w-60">
                     Company overview
                   </Link>
@@ -102,17 +94,9 @@ const Navbar = () => {
 
         {/* links */}
         <div className="items-center space-x-10 hidden md:flex">
+     
           <Link to="#">
-            <img src={Icon1} alt="Icon 1" />
-          </Link>
-          <Link to="#">
-            <img src={Icon2} alt="Icon 2" />
-          </Link>
-          <Link to="#">
-            <img src={Icon3} alt="Icon 3" />
-          </Link>
-          <Link to="#">
-            <img src={Icon4} alt="Icon 4" />
+            <img src={Icon4} alt="Icon 4" className="w-[25px]" />
           </Link>
           <Link to='contact-us' className="bg-primary text=[16px] text-[#FFFF] px-4 py-2 rounded-lg">
             Contact Us
@@ -133,46 +117,49 @@ const Navbar = () => {
           isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="py-[20.8px]">
-          <Link to="/" className="block text-[#FFF] hover:text-primary">
-            Home
-          </Link>
-          <Link to="services-cnsa" className="block text-[#FFF] hover:text-primary my-[1.3rem]">
-            CNSA
-          </Link>
-          <Link to="cpsa" className="block text-[#FFF] hover:text-primary">
-            CPSA
-          </Link>
-          <Link to="ccsa" className="block text-[#FFF] hover:text-primary my-[1.3rem]">
-            CCSA
-          </Link>
-          <Link to="cwsa" className="block text-[#FFF] hover:text-primary">
-            CWSA
-          </Link>
-          <Link to="company-overview" className="block text-[#FFF] hover:text-primary my-[1.3rem]">
-            Company overview
-          </Link>
-          <Link href="team" className="block text-[#FFF] hover:text-primary">
-            Our teams
-          </Link>
-          <Link href="mission&vision" className="block text-[#FFF] hover:text-primary my-[1.3rem]">
-            Mission and vision
-          </Link>
-          <Link to="approach" className="block text-[#FFF] hover:text-primary mb-[1.3rem]">
-            Our approach
-          </Link>
+<div className="py-[20.8px] flex flex-col items-start gap-y-4">
+  <Link to="/" className="text-[#FFF] hover:text-primary text-center py-[8px] ml-[5px]">
+    Home
+  </Link>
 
-          {/* <div className="flex my-[1.3rem] gap-6">
-            <img src={Icon1} alt="Icon 1" />
-            <img src={Icon2} alt="Icon 2" />
-            <img src={Icon3} alt="Icon 3" />
-            <img src={Icon4} alt="Icon 4" />
-          </div> */}
+  <Link to="ccsa" className="flex items-center">
+    <img src={servOne} alt="ccsa" className="w-[65px]" />
+  </Link>
 
-          <Link to='contact-us' className="bg-primary text=[16px] text-[#FFFF] px-4 py-2 rounded-lg ">
-            Contact Us
-          </Link>
-        </div>
+  <Link to="services-cnsa" className="flex items-center">
+    <img src={servTwo} alt="cnsa" className="w-[65px]" />
+  </Link>
+
+  <Link to="cpsa" className="flex items-center">
+    <img src={servThree} alt="cpsa" className="w-[65px]" />
+  </Link>
+
+  <Link to="cwsa" className="flex items-center">
+    <img src={servFour} alt="cwsa" className="w-[65px]" />
+  </Link>
+
+  <Link to="company-overview" className="text-[#FFF] hover:text-primary text-center py-[8px] ml-[5px]">
+    Company overview
+  </Link>
+
+  <Link to="team" className="text-[#FFF] hover:text-primary text-center py-[8px] ml-[5px]">
+    Our teams
+  </Link>
+
+  <Link to="mission&vision" className="text-[#FFF] hover:text-primary text-center py-[8px] ml-[5px]">
+    Mission and vision
+  </Link>
+
+  <Link to="approach" className="text-[#FFF] hover:text-primary text-center py-[8px] ml-[5px]">
+    Our approach
+  </Link>
+
+  <Link to="contact-us" className="bg-primary text-[16px] text-[#FFF] px-4 py-2 rounded-lg text-center mt-4 ml-[5px]">
+    Contact Us
+  </Link>
+</div>
+
+
       </div>
     </nav>
   );

@@ -4,7 +4,7 @@ const ContactMap = () => {
   // Define the map locations
   const locations = [
     {
-      name: "KSA",
+      name: "Kingdom of Saudi Arabia",
       url: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d694999.0583378462!2d49.988631!3d26.270716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssa!4v1697559093711!5m2!1sen!2ssa",
     },
     {
@@ -28,7 +28,7 @@ const ContactMap = () => {
   const [currentMap, setCurrentMap] = useState(locations[0].url);
 
   return (
-    <div className="w-[95%] mx-auto px-[16px] py-[2.5rem] text-center md:text-left xl:px-[24px] lg:px-[24px]">
+    <div className="w-[95%] mx-auto  py-[2.5rem] text-center md:text-left ">
       {/* Responsive 2 columns */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-[48px] h-full">
         {/* Google Map Embedding and Buttons */}
@@ -39,7 +39,7 @@ const ContactMap = () => {
     <button
       key={index}
       onClick={() => setCurrentMap(location.url)}
-      className="px-[32px] py-[13px] text-[14px] border border-gray-500 text-gray-500 rounded-md hover:bg-primarye focus:outline-none focus:border-red-500 focus:text-red-500 active:bg-red-500 active:border-red-500 active:text-white transition-colors duration-300"
+      className="px-[12px] py-[5px] text-[14px] border border-gray-500 text-gray-500 rounded-md hover:bg-primarye focus:outline-none focus:border-red-500 focus:text-red-500 active:bg-red-500 active:border-red-500 active:text-white transition-colors duration-300"
     >
       {location.name}
     </button>

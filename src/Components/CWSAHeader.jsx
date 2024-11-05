@@ -1,7 +1,7 @@
 import React from 'react';
 import headerBgImage from '../images/headerbg3.png'; 
 import { Link } from 'react-router-dom';
-
+import CWSALogo from "../images/Group 12.svg";
 
 const CWSAHeader = () => {
   return (
@@ -12,24 +12,7 @@ const CWSAHeader = () => {
     }}
   >
     <div className="absolute inset-0 flex flex-col items-center justify-center h-full px-[16px]">
-      <h1
-        className="
-          text-[80px]
-          text-center
-          font-extrabold
-          leading-[100%]
-          text-[#FFF]
-          m-0
-          md:text-[120px] 
-          lg:text-[180px]   
-          xl:text-[200px]    
-        "
-        style={{
-          mixBlendMode: "exclusion",
-        }}
-      >
-        CWSA
-      </h1>
+    <img src={CWSALogo} alt='cwsa'/>
 
       <p
         className="
@@ -43,7 +26,7 @@ const CWSAHeader = () => {
           xl:w-[832px]  xl:text-[20px]  
         "
       >
-Elevating Water Treatment in Oil and Gas Extraction for Optimal Efficiency     </p>
+Arabia’s Leading Continuous Water Services The Future of Waste-water Treatment in the Kingdom    </p>
       <Link to='/contact-us' className="buttonTwo">
         <span className="buttonText">Contact Us</span>
       </Link>

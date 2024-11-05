@@ -3,34 +3,38 @@ import sliderOne from "../images/headerbg.jpg";
 import sliderTwo from "../images/headerbg4.png"; 
 import sliderThree from "../images/headerbg3.png"; 
 import sliderFour from "../images/ccsa.png"; 
+import CNSALogo from "../images/Group 10.svg";
+import CPSALogo from "../images/Group 11.svg";
+import CWSALogo from "../images/Group 12.svg";
+import CCSALogo from "../images/Group 13.svg";
 
 
 // Array of slider content including images, titles, descriptions, and button links
 const slides = [
   {
     image: sliderOne,
-    title: "CNSA",
+    src: CNSALogo,
     description: "Elevating industrial standards with comprehensive nitrogen solutions tailored for efficiency and safety, CNSA leads with innovation in every application.",
     buttonText: "Learn More",
     buttonLink: "/services-cnsa",
   },
   {
     image: sliderTwo,
-    title: "CPSA",
+    src: CPSALogo,
     description: "Delivering cutting-edge pressure swing adsorption systems to meet global gas separation demands with reliability and precision.",
     buttonText: "Learn More",
     buttonLink: "/cpsa",
   },
   {
     image: sliderThree,
-    title: "CWSA",
+    src: CWSALogo,
     description: "Driving sustainability through advanced carbon capture technology, helping industries lower emissions and ensure a greener future.",
     buttonText: "Learn More",
     buttonLink: "/cwsa",
   },
   {
     image: sliderFour,
-    title: "CCSA",
+    src: CCSALogo,
     description: "Providing advanced chemical solutions to optimize operational efficiency and elevate performance.",
     buttonText: "Learn More",
     buttonLink: "/ccsa",
@@ -68,24 +72,8 @@ const Header = () => {
       }}
     >
       <div className="absolute inset-0 flex flex-col items-center justify-center h-full px-[16px]">
-        <h1
-          className="
-            text-[80px]
-            text-center
-            font-extrabold
-            leading-[100%]
-            text-[#FFF]
-            m-0
-            md:text-[120px] 
-            lg:text-[180px]   
-            xl:text-[200px]    
-          "
-          style={{
-            mixBlendMode: "exclusion",
-          }}
-        >
-          {slides[currentImage].title} {/* Dynamically update title */}
-        </h1>
+
+      <img src={slides[currentImage].src} title={slides[currentImage].title} alt="" />       
 
         <p
           className="

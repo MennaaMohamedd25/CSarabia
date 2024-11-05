@@ -1,6 +1,7 @@
 import React from 'react';
 import headerBgImage from '../images/headerbg.jpg'; // Import your background image
 import { Link } from 'react-router-dom';
+import CNSALogo from "../images/Group 10.svg";
 
 const ServicesCNSAHeader = () => {
   return (
@@ -11,24 +12,7 @@ const ServicesCNSAHeader = () => {
       }}
     >
       <div className="absolute inset-0 flex flex-col items-center justify-center h-full px-[16px]">
-        <h1
-          className="
-            text-[80px]
-            text-center
-            font-extrabold
-            leading-[100%]
-            text-[#FFF]
-            m-0
-            md:text-[120px] 
-            lg:text-[180px]   
-            xl:text-[200px]    
-          "
-          style={{
-            mixBlendMode: "exclusion",
-          }}
-        >
-          CNSA
-        </h1>
+ <img src={CNSALogo} alt='csna'/>
 
         <p
           className="
@@ -42,8 +26,7 @@ const ServicesCNSAHeader = () => {
             xl:w-[832px]  xl:text-[20px]  
           "
         >
-      Nitrogen Services: Elevating Industries with Pioneering Nitrogen Solutions
-        </p>
+Setting the Gold Standard for Oil, Gas, Petrochemical, and Processing        </p>
         <Link to='/contact-us' className="buttonTwo">
           <span className="buttonText">Contact Us</span>
         </Link>

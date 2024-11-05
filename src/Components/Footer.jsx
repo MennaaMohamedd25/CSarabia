@@ -1,16 +1,12 @@
 import React from 'react';
 import logo from '../images/footerlogo.svg';
-import logoT from '../images/logo-twitter 2.svg';
-import logoF from '../images/logo-fb-simple 2.svg';
-import logoI from '../images/logo-instagram 1.svg';
-import logoG from '../images/logo-github 1.svg';
+import logoT from '../images/Frame (3).svg';
+
 import { Link } from 'react-router-dom';
 
 const socialMediaLogos = [
   { src: logoT, alt: 'twitter' },
-  { src: logoF, alt: 'facebook' },
-  { src: logoI, alt: 'instagram' },
-  { src: logoG, alt: 'google' },
+
 ];
 
 const servicesLinks = [
@@ -53,33 +49,32 @@ const Footer = () => {
     pb-14    
     lg:pb-[55px]    
     px-10    
-    lg:px-[319px]   
+    
   " 
   style={{
     top: 'calc(50% - 260px)', 
   }}
 >
 
-          <h2 className='font-bold text-[40px]'>Ready to Get Started?</h2>
-          <p className='mt-[16px] mb-[48px]'>The purpose of a FAQ is generally to provide information on frequent questions or concerns.</p>
+          <h2 className='font-bold text-[40px]'>Choose Excellence. Choose CS ARABIA.</h2>
+          <p className='mt-[16px] mb-[48px] mx-auto'>Connect with our team to see how we can apply our flexible industrial solutions to your business and sector. We have worked hard to achieve the premier status we enjoy today, but we will never stop working to maintain it</p>
           <Link to='contact-us' className="bg-secondery text=[16px] text-[#FFFF] px-[40px] py-[18px] rounded-[50px]">
             Contact Us
           </Link>
         </div>
       </div>
 
-      <footer className="w-full bg-vanish text-white pt-[2rem] pb-[2rem] text-center xl:text-start xl:pt-[190px] lg:text-start lg:pt-[190px]"> {/* Set footer as relative */}
+      <footer className="w-full bg-vanish text-white pt-[2rem] pb-[2rem] text-center xl:text-start xl:pt-[190px] lg:text-start lg:pt-[190px] mt-[40px]"> {/* Set footer as relative */}
         <div className='w-[95%] mx-auto px-[16px] lg:px-[24px] xl:px-[24px]'>  
           <div className="flex flex-col md:flex-row justify-between">
             {/* First Column */}
             <div className="flex-col items-center justify-center md:justify-start mb-4 md:mb-0 ">
               <img src={logo} alt='logo csarabia' className='m-auto xl:ml-0 lg:ml-0'/>
               <p className="my-[2rem] w-[302px] text-secondery sm:mx-auto xs:mx-auto">
-                Build better online communities and improve software. Make supply chains more efficient and understand business relationships better.
-              </p>
+              Building a legacy of service excellence and technical precision for the future of Saudi Arabia’s oil & gas sector.              </p>
               <div className='flex space-x-2 mb-[2rem] gap-6 justify-center xl:justify-normal lg:justify-normal'>
   {socialMediaLogos.map((logo, index) => (
-    <Link to='#' key={index} className='bg-gray-300 rounded-full p-2 flex items-center justify-center'>
+    <Link to='#' key={index} className='bg-secondery rounded-full p-2 flex items-center justify-center'>
       <img src={logo.src} alt={logo.alt} className='h-6 w-6' />
     </Link>
   ))}

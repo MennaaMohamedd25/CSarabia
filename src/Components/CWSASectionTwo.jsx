@@ -4,20 +4,29 @@ import Doots from '../images/doots.png';
 const approaches = [
     {
       id: 1,
-      title: 'Exceptional Oil Removal Efficiency:',
-      description: 'Staupers technology offers an unparalleled capability to eliminate up to 99.5% of oil from water, ensuring cleaner outputs and environmental compliance. This exceptional performance underscores Staupers commitment to delivering top-tier water treatment solutions that meet the stringent demands of the oil and gas industry.',
+      title: '99.95% Efficacy',
+      description: 'Our exceptional de-oiling success is rooted in our exclusive partnership with Stauper Water Technologies. With 50% higher efficiency and a 50% lower footprint, CS ARABIA is a pioneer in the separation of oil, gas, and solids from produced water, a catalyst for safe disposal or reuse.',
     },
     {
       id: 2,
-      title: 'Achieving Near-Zero Discharge Levels',
-      description: 'Staupers technology significantly reduces environmental impact by pushing discharge levels toward 0 ppm, setting a new standard in water treatment efficiency and compliance. This capability ensures that operations meet even the most stringent environmental regulations, supporting a sustainable future in industrial processes.',
+      title: 'Environmental Compliance ',
+      description: 'Aside from lowering costs, Stauper’s oil-water separation technology showcases a near-zero discharge of almost 0 ppm. This mitigates environmental pollution by keeping contaminants away from water sources. We are proud to be in a position to use our technical expertise to preserve natural resources and leave a better world behind for future generations.',
     },
     {
       id: 3,
-      title: 'Versatility in Treatment',
-      description: 'Stauper’s technology excels by offering flexibility in operation, stability in performance, and the added capability to effectively remove solids from water. This multi-faceted approach enhances the adaptability and efficiency of water treatment processes, meeting diverse operational needs with superior results.',
+      title: 'High Capacity:',
+      description: 'Only CS ARABIA can handle extraordinarily high volumes of fluid, without compromising efficiency or performance. Stauper’s advanced oil-water separation technology means we can apply the method to high water volumes across a broad range of sectors.. This multi-faceted approach enhances the adaptability and efficiency of water treatment processes, meeting diverse operational needs with superior results.',
     },
-    
+    {
+      id: 4,
+      title: 'Scientific Precision',
+      description: 'Combining centrifugal forces and fluid dynamics in a robust and maintenance-free system, Staupers Compact Flotation Unit ensures efficient separation of oil droplets and gas bubbles from produced water.',
+    },
+    {
+      id: 5,
+      title: 'Flexible Technology Integration:',
+      description: 'CS ARABIA puts its clients in control. Choose between a plug-and-play solution, or retrofit existing vessels to improve flow capacity and de-oiling without resorting to costly chemicals or vessel recertification',
+    },
  
   ];
 
