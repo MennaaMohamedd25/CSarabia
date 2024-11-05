@@ -2,9 +2,9 @@ import React from 'react';
 import pdfIcon from '../images/pdf.png';
 
 // Import the PDFs
-import Anti from '../Pdfs/Anti Corruption Policy.pdf';
+// import Anti from '../Pdfs/Anti Corruption Policy.pdf';
 import Conduct from '../Pdfs/Code of Conduct Policy.pdf';
-import Conflict from '../Pdfs/Conflict of Interest Policy.pdf';
+// import Conflict from '../Pdfs/Conflict of Interest Policy.pdf';
 import Gifts from '../Pdfs/Gifts and Hospitality Policy.pdf';
 import Health from '../Pdfs/HEALTH & SAFETY MANUAL.pdf';
 import HealthPolicy from '../Pdfs/Health, Safety and Environment Policy.pdf';
