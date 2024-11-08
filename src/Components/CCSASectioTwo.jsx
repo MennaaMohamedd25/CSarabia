@@ -5,34 +5,30 @@ import Doots from '../images/doots.png';
 const approaches = [
     {
       id: 1,
-      title: 'State-of-the-Art Technology',
-      description: 'Employing cutting-edge chemical technologies and methods to ensure efficient and environmentally responsible cleaning.',
+      title: 'Sophisticated Technology',
+      description: 'Our industry-leading team leverages the most advanced equipment and techniques to remove residual oil, hard water deposits, corrosion, and other unwanted impurities and contaminants from pipelines and process equipment.',
     },
     {
       id: 2,
-      title: 'Tailored Chemical Solutions Efficiency',
-      description: 'Developing customized cleaning strategies in partnership with clients to specifically address their unique operational needs.',
+      title: 'Customized Strategies:',
+      description: 'Having provided customized chemical cleaning solutions to over 120 clients worldwide, we are no strangers to tailoring bespoke chemical cleaning strategies. Following a thorough evaluation of contaminants present and your desired cleanliness levels, we can craft a bespoke strategy to preserve the integrity of your systems.',
     },
     {
       id: 3,
-      title: 'Full-Service Capability',
-      description: 'Providing a broad range of chemical cleaning services from routine maintenance to critical emergency responses.',
+      title: 'Eco-Friendly Processes:',
+      description: 'Our uniquely Earth-friendly approach to chemical cleaning and decontamination ensures you achieve the results you seek with minimal ecological impact. We use environmentally-responsible products and process for your peace of mind.',
     },
     {
         id: 4,
-        title: 'Dedicated to Sustainability',
-        description: 'Prioritizing ecological responsibility in all projects to minimize environmental impacts.',
+        title: 'Human-Centered Approach:',
+        description: 'Our clients pulse the heart of all we do. Our human-centric approach keep your distinct needs in mind when developing customized chemical cleaning solutions that meet the unique needs of our esteemed industrial clients',
       },
       {
         id: 5,
-        title: 'Guaranteed Quality',
-        description: 'Upholding the highest standards of operational excellence with stringent quality controls and expert execution.',
+        title: 'Supreme Quality:',
+        description: 'CS Arabia’s experience and technology means we are uniquely poised to effectively remove biofouling, sludge contaminants, and more, with results that last from initial planning to ongoing maintenance.',
       },
-      {
-        id: 6,
-        title: 'Client-Centric Approach',
-        description: 'Building lasting relationships based on trust and satisfaction, striving to exceed expectations in every project..',
-      },
+   
  
   ];
 

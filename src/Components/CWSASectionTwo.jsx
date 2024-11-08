@@ -36,7 +36,7 @@ const CWSASectionTwo = () => {
     <div className="w-[95%] mx-auto text-center px-[16px] py-10">
       
       {/* Responsive 4 columns */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3www gap-6">
         {/* Iterate over the array to generate columns dynamically */}
         {approaches.map((approach) => (
           <div key={approach.id} className="flex flex-col items-start text-start">

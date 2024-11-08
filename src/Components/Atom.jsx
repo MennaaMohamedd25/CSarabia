@@ -26,7 +26,7 @@ const Atom = () => {
       <div className="absolute inset-0 bg-black opacity-50 md:hidden"></div> {/* Adjust opacity as needed */}
 
       {/* Content */}
-      <div className='relative z-[5] w-[95%] mx-auto px-[16px] py-[2.5rem] text-center md:text-left xl:px-[24px] lg:px-[24px]'>
+      <div className='relative z-[5] w-[95%] mx-auto py-[2.5rem] text-center md:text-left '>
         <h2 className='text-[20px] font-bold text-[#FFF] w-auto mb-8 xl:w-[550px] xl:text-[32px] lg:w-[548px] lg:text-[32px]'>
         A Saudi Force to be Reckoned With
         </h2>

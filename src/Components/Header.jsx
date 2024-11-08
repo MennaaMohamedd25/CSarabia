@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// import sliderMain from "../images/Headerbgmain.png";  // Original slider main image
 import sliderOne from "../images/headerbg.jpg";
 import sliderTwo from "../images/headerbg4.png"; 
 import sliderThree from "../images/headerbg3.png"; 
@@ -7,10 +8,13 @@ import CNSALogo from "../images/Group 10.svg";
 import CPSALogo from "../images/Group 11.svg";
 import CWSALogo from "../images/Group 12.svg";
 import CCSALogo from "../images/Group 13.svg";
+// import extantion from "../images/headermainex.png";  // The extantion image to be overlaid
 
-
-// Array of slider content including images, titles, descriptions, and button links
 const slides = [
+  // {
+  //   image: sliderMain,  // Set sliderMain image for the background
+  //   src: extantion,
+  // },
   {
     image: sliderOne,
     src: CNSALogo,
@@ -71,9 +75,13 @@ const Header = () => {
         background: `linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url(${slides[currentImage].image}) lightgray 50% / cover no-repeat`,
       }}
     >
-      <div className="absolute inset-0 flex flex-col items-center justify-center h-full px-[16px]">
 
-      <img src={slides[currentImage].src} title={slides[currentImage].title} alt="" />       
+
+      <div className="absolute inset-0 flex flex-col items-center justify-center h-full px-[16px]">
+        {/* Only render the logo image and description for the current slide */}
+        {slides[currentImage].src && (
+          <img src={slides[currentImage].src} title={slides[currentImage].title} alt="Logo" />
+        )}
 
         <p
           className="
@@ -89,9 +97,13 @@ const Header = () => {
         >
           {slides[currentImage].description} {/* Dynamically update description */}
         </p>
-        <a href={slides[currentImage].buttonLink} className="buttonTwo">
-          <span className="buttonText">{slides[currentImage].buttonText}</span> {/* Dynamically update button text */}
-        </a>
+
+        {/* Only show the button if buttonText and buttonLink are available */}
+        {slides[currentImage].buttonText && slides[currentImage].buttonLink && (
+          <a href={slides[currentImage].buttonLink} className="buttonTwo">
+            <span className="buttonText">{slides[currentImage].buttonText}</span> {/* Dynamically update button text */}
+          </a>
+        )}
 
         {/* Dots for slider navigation */}
         <div className="flex justify-center mt-[2rem] gap-[24px] ">

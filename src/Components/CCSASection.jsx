@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 import overview from "../images/ccsasection.png";
 
-
-
 const CCSASection = () => {
-
-
   return (
     <div className="shadow-md rounded-[24px] bg-vanish p-10 my-[2.5rem] px-[16px] w-[95%] mx-auto py-[2.5rem] text-center md:text-left xl:px-[24px] lg:px-[24px]">
       <div className="flex flex-col md:flex-row justify-between items-center gap-x-20">
@@ -18,23 +14,31 @@ const CCSASection = () => {
         <div className="md:w-1/2 mb-6 md:mb-0 text-center md:text-left order-2 md:order-1">
           {/* Heading */}
           <h2 className="text-[16px] text-start">
-            Chemical Cleaning Services Arabia. Here at CCSA, we lead the charge in delivering comprehensive chemical cleaning solutions for pipelines, plants, and terminals, including GOSP and GGM facilities.
+            While there is no shortage of chemical cleaning services in Saudi
+            Arabia, there is only one name that is hailed for chemical treatment
+            mastery that delivers superior results without harming the
+            environment.{" "}
           </h2>
 
           {/* Text */}
           <p className="my-[2.5rem] text-[16px] text-start">
-            Our foundation is built on a vision of operational excellence combined with stringent environmental stewardship.
+            CS ARABIA offers the widest and most advanced suite of chemical
+            cleaning, treatment, and decontamination solutions for pipelines,
+            plants, and terminals.{" "}
           </p>
 
           <p className="text-[16px] text-start mb-6">
-            We are committed to setting industry standards, aspiring to be synonymous with sustainable practices and ensuring unparalleled client satisfaction and environmental care.
+            We are honored to be the pinnacle destination for an elite pool of
+            clients all across the region who know they don’t need to go
+            anywhere else for advanced chemical treatment.{" "}
           </p>
-
-
+          <p className="text-[16px] text-start mb-6">
+          CS ARABIA stands unmatched as an undisputed leader in state-of-the-art, eco-friendly chemical treatment solutions, with the goal of optimizing performance while contributing to a more sustainable future for all.{" "}
+          </p>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default CCSASection;

@@ -2,7 +2,7 @@ import React from 'react'
 
 const MissionHeader = () => {
   return (
-    <div className='w-[95%] mx-auto text-center px-[16px] py-10 my-[8rem] xl:mt-[10rem] lg:mt-[10rem] md:mt-[8rem]'>
+    <div className='w-[95%] mx-auto text-center px-[16px] py-10 my-[8rem] xl:mt-[8rem] lg:mt-[8rem] md:mt-[6rem]'>
       {/* Red dot with text */}
       <div className="flex items-center mb-4 justify-center">
         <span className="w-[8px] h-[8px] bg-primary  rounded-full mr-2"></span>
