@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import sliderMain from "../images/Headerbgmain.png";  // Original slider main image
+import sliderMain from "../images/Headerbgmain.png";  // Original slider main image
 import sliderOne from "../images/headerbg.jpg";
 import sliderTwo from "../images/headerbg4.png"; 
 import sliderThree from "../images/headerbg3.png"; 
@@ -8,13 +8,16 @@ import CNSALogo from "../images/Group 10.svg";
 import CPSALogo from "../images/Group 11.svg";
 import CWSALogo from "../images/Group 12.svg";
 import CCSALogo from "../images/Group 13.svg";
-// import extantion from "../images/headermainex.png";  // The extantion image to be overlaid
+import extantion from "../images/extantion.png";  // The extantion image to be overlaid
 
 const slides = [
-  // {
-  //   image: sliderMain,  // Set sliderMain image for the background
-  //   src: extantion,
-  // },
+
+  {
+    image: sliderMain,
+    src: extantion,
+ 
+  },
+
   {
     image: sliderOne,
     src: CNSALogo,
