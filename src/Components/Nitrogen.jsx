@@ -1,5 +1,5 @@
 import React from 'react';
-import pipe from '../images/nn.png';
+import pipe from '../images/dying.png';
 
 
 const Nitrogen = () => {

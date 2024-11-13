@@ -1,5 +1,5 @@
 import React from 'react'
-import pipe from '../images/dying.png'
+import pipe from '../images/nn.png'
 
 const Drying = () => {
   return (

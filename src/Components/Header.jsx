@@ -8,7 +8,7 @@ import CNSALogo from "../images/Group 10.svg";
 import CPSALogo from "../images/Group 11.svg";
 import CWSALogo from "../images/Group 12.svg";
 import CCSALogo from "../images/Group 13.svg";
-import extantion from "../images/extantion.png";  // The extantion image to be overlaid
+import extantion from "../images/extention.svg";  // The extantion image to be overlaid
 
 const slides = [
 
@@ -21,28 +21,28 @@ const slides = [
   {
     image: sliderOne,
     src: CNSALogo,
-    description: "Elevating industrial standards with comprehensive nitrogen solutions tailored for efficiency and safety, CNSA leads with innovation in every application.",
+    description: "Setting the Gold Standard for Oil, Gas, Petrochemical, and Processing.",
     buttonText: "Learn More",
     buttonLink: "/services-cnsa",
   },
   {
     image: sliderTwo,
     src: CPSALogo,
-    description: "Delivering cutting-edge pressure swing adsorption systems to meet global gas separation demands with reliability and precision.",
+    description: "Welding-Free Pipeline Connections Through Positive Seal Coupling.",
     buttonText: "Learn More",
     buttonLink: "/cpsa",
   },
   {
     image: sliderThree,
     src: CWSALogo,
-    description: "Driving sustainability through advanced carbon capture technology, helping industries lower emissions and ensure a greener future.",
+    description: "Arabia’s Leading Continuous Water Services The Future of Waste-water Treatment in the Kingdom.",
     buttonText: "Learn More",
     buttonLink: "/cwsa",
   },
   {
     image: sliderFour,
     src: CCSALogo,
-    description: "Providing advanced chemical solutions to optimize operational efficiency and elevate performance.",
+    description: "Eco-Friendly Chemical Treatment Solutions LEADING THE CHARGE SINCE 2012.",
     buttonText: "Learn More",
     buttonLink: "/ccsa",
   },

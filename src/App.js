@@ -13,6 +13,7 @@ import Nitrogen from "./Components/Nitrogen";
 import Mothballing from "./Components/Mothballing";
 import Air from "./Components/Air";
 import Gauging from "./Components/Gauging";
+import Cruding from "./Components/Cruding.jsx";
 import Inspection from "./Components/Inspection";
 import CPSAPage from "./Pages/CPSA";
 import CWSAPage from "./Pages/CWSAPage";
@@ -51,6 +52,7 @@ function MainContent() {
           <Route path="mothballing" element={<Mothballing />} />
           <Route path="air" element={<Air />} />
           <Route path="gauging" element={<Gauging />} />
+          <Route path="cruding" element={<Cruding />} />
           <Route path="inspection" element={<Inspection />} />
           <Route path="cpsa" element={<CPSAPage />} />
           <Route path="cwsa" element={<CWSAPage />} />
