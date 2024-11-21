@@ -57,7 +57,7 @@ const FooterTwo = () => {
             Arabia
           </h2>
           <p className="mt-[16px] mb-[48px] mx-auto">
-          From Saudi Arabia to Dubai, Abu Dhabi, and beyond, CS Arabia has spent over a decade at the forefront of chemical cleaning – and we are just getting started. We have the experience, team, and technology to tackle any chemical cleaning requirements, and we look forward to making your project our next success story.
+          From Saudi Arabia to Dubai, Abu Dhabi, and beyond, Continuous Services Arabia has spent over a decade at the forefront of chemical cleaning – and we are just getting started. We have the experience, team, and technology to tackle any chemical cleaning requirements, and we look forward to making your project our next success story.
           </p>
           <Link
             to="contact-us"
@@ -166,7 +166,7 @@ const FooterTwo = () => {
           <div className="w-[100%] h-[1px] bg-[#B8B8B8] my-[3rem]"></div>
 
           <p className="text-secondery text-center">
-            © Copyright 2024, All Rights Reserved by Csarabia
+            © Copyright 2024, All Rights Reserved by Continuous Services Arabia
           </p>
         </div>
       </footer>

@@ -57,7 +57,7 @@ const FooterTwo = () => {
 >
 
           <h2 className='font-bold text-[40px]'>Ptotect your infrastinfrastructure</h2>
-          <p className='mt-[16px] mb-[48px] mx-auto'>As new nitrogen service providers emerge, CS ARABIA remains the Kingdom’s premier destination for advanced nitrogen leak detection and pressure testing. Contact us to learn how we can pinpoint hidden leaks and maintain the integrity of your pipeline flow.</p>
+          <p className='mt-[16px] mb-[48px] mx-auto'>As new nitrogen service providers emerge, Continuous Services Arabia remains the Kingdom’s premier destination for advanced nitrogen leak detection and pressure testing. Contact us to learn how we can pinpoint hidden leaks and maintain the integrity of your pipeline flow.</p>
           <Link to='contact-us' className="bg-secondery text=[16px] text-[#FFFF] px-[40px] py-[18px] rounded-[50px]">
             Contact Us
           </Link>
@@ -132,7 +132,7 @@ const FooterTwo = () => {
 
           <div className='w-[100%] h-[1px] bg-[#B8B8B8] my-[3rem]'></div>
 
-          <p className='text-secondery text-center'>© Copyright 2024, All Rights Reserved by Csarabia</p>
+          <p className='text-secondery text-center'>© Copyright 2024, All Rights Reserved by Continuous Services Arabia</p>
         </div>
       </footer>
     </>

@@ -19,11 +19,11 @@ const ServicesCNSASection = () => {
 
           {/* Lorem ipsum text */}
           <p className="my-[2.5rem] text-[16px]  text-start">
-          In collaboration with Canadian Nitrogen Services and Abdulla Fouad Energy Services, CS ARABIA sets the golden benchmark for the region’s oil, gas, petrochemical, and processing sectors. 
+          In collaboration with Canadian Nitrogen Services and Abdulla Fouad Energy Services, Continuous Services Arabia sets the golden benchmark for the region’s oil, gas, petrochemical, and processing sectors. 
           </p>
 
           <p className="text-[16px]  text-start">
-          While other companies aim to meet your expectations, we are here to surpass them from end to end. CS ARABIA balances time-tested wisdom with emerging industry advancements to bring you the highest standards in safety and operational integrity. 
+          While other companies aim to meet your expectations, we are here to surpass them from end to end. Continuous Services Arabia balances time-tested wisdom with emerging industry advancements to bring you the highest standards in safety and operational integrity. 
           </p>
 
           <p className=" mt-[2.5rem] text-[16px]  text-start">

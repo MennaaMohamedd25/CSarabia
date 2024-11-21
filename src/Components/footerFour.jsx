@@ -57,7 +57,7 @@ const FooterTwo = () => {
 >
 
           <h2 className='font-bold text-[40px]'>The Future of Industrial Water Treatment is Here</h2>
-          <p className='mt-[16px] mb-[48px] mx-auto'>CS ARABIA provides continuous water services to an array of sectors, spearheading the effective and efficient removal of impurities from produced water. To learn more about how CS ARABIA is championing the trail for water filtration, purification, and treatment, contact us today.</p>
+          <p className='mt-[16px] mb-[48px] mx-auto'>Continuous Services Arabia provides continuous water services to an array of sectors, spearheading the effective and efficient removal of impurities from produced water. To learn more about how Continuous Services Arabia is championing the trail for water filtration, purification, and treatment, contact us today.</p>
           <Link to='contact-us' className="bg-secondery text=[16px] text-[#FFFF] px-[40px] py-[18px] rounded-[50px]">
             Contact Us
           </Link>
@@ -132,7 +132,7 @@ const FooterTwo = () => {
 
           <div className='w-[100%] h-[1px] bg-[#B8B8B8] my-[3rem]'></div>
 
-          <p className='text-secondery text-center'>© Copyright 2024, All Rights Reserved by Csarabia</p>
+          <p className='text-secondery text-center'>© Copyright 2024, All Rights Reserved by Continuous Services Arabia</p>
         </div>
       </footer>
     </>

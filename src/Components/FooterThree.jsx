@@ -57,7 +57,7 @@ const FooterTwo = () => {
 >
 
           <h2 className='font-bold text-[40px]'>A New Era for Pipeline Construction Is Here</h2>
-          <p className='mt-[16px] mb-[48px] mx-auto'>Experience the difference of working with the region’s leader in pipeline services. With a devotion to innovation and service excellence, our clients trust CS ARABIA for state-of-theart PSC technology that renders conventional setbacks obsolete.</p>
+          <p className='mt-[16px] mb-[48px] mx-auto'>Experience the difference of working with the region’s leader in pipeline services. With a devotion to innovation and service excellence, our clients trust Continuous Services Arabia for state-of-theart PSC technology that renders conventional setbacks obsolete.</p>
           <Link to='contact-us' className="bg-secondery text=[16px] text-[#FFFF] px-[40px] py-[18px] rounded-[50px]">
             Contact Us
           </Link>
@@ -132,7 +132,7 @@ const FooterTwo = () => {
 
           <div className='w-[100%] h-[1px] bg-[#B8B8B8] my-[3rem]'></div>
 
-          <p className='text-secondery text-center'>© Copyright 2024, All Rights Reserved by Csarabia</p>
+          <p className='text-secondery text-center'>© Copyright 2024, All Rights Reserved by Continuous Services Arabia</p>
         </div>
       </footer>
     </>

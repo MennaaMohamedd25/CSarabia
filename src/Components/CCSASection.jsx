@@ -22,7 +22,7 @@ const CCSASection = () => {
 
           {/* Text */}
           <p className="my-[2.5rem] text-[16px] text-start">
-            CS ARABIA offers the widest and most advanced suite of chemical
+          Continuous Services Arabia offers the widest and most advanced suite of chemical
             cleaning, treatment, and decontamination solutions for pipelines,
             plants, and terminals.{" "}
           </p>
@@ -33,7 +33,7 @@ const CCSASection = () => {
             anywhere else for advanced chemical treatment.{" "}
           </p>
           <p className="text-[16px] text-start mb-6">
-          CS ARABIA stands unmatched as an undisputed leader in state-of-the-art, eco-friendly chemical treatment solutions, with the goal of optimizing performance while contributing to a more sustainable future for all.{" "}
+          Continuous Services Arabia stands unmatched as an undisputed leader in state-of-the-art, eco-friendly chemical treatment solutions, with the goal of optimizing performance while contributing to a more sustainable future for all.{" "}
           </p>
         </div>
       </div>

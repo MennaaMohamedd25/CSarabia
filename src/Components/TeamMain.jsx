@@ -8,16 +8,15 @@ import teamSix from '../images/team6.png';
 
 // Array of team members with names and titles
 const teamMembers = [
-  { id: 1, name: 'Faisal Abdulla Fouad', title: 'Chairman - Abdulla Fouad Group', image: teamOne },
-  { id: 2, name: 'Timothy Pirie', title: 'Founder - Canadian Nitrogen Services', image: teamTwo },
-  { id: 3, name: 'Turki Al-Sadoon', title: 'CEO - CSArabia', image: teamThree },
+  { id: 1, name: 'Khaled Al-Haj', title: 'Account Manager', image: teamOne },
+  { id: 2, name: 'Turki Al-Sadoon', title: 'CEO - CSArabia', image: teamThree },
   { id: 4, name: 'Faisal Qari', title: 'Vice President', image: teamFour },
   { id: 5, name: 'Sayed Ibrahim', title: 'Business Development Manager', image: teamFive },
   { id: 6, name: 'Reda Abdelsalam', title: 'Engineering Manager', image: teamSix },
 ];
 
 const TeamMain = () => {
-  const justifyClass = teamMembers.length === 4 ? 'justify-start' : 'justify-center';
+  const justifyClass = teamMembers.length === 4 ? 'justify-start' : 'justify-start';
 
   return (
     <div className="w-full flex justify-center">

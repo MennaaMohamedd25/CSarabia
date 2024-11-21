@@ -25,7 +25,7 @@ const CWSASection = () => {
           We are honored to be able to contribute to our region’s water security strategy through the advanced treatment and management of produced water nationwide.           </p>
 
           <p className="text-[16px]  text-start">
-          After more than a decade of experience and an ongoing commitment to innovation, CS ARABIA works closely with its esteemed clients to desalinate produced water with remarkable precision.           </p>
+          After more than a decade of experience and an ongoing commitment to innovation, Continuous Services Arabia works closely with its esteemed clients to desalinate produced water with remarkable precision.           </p>
 
           <p className=" mt-[2.5rem] text-[16px]  text-start">
           As leading authorities in water and waste-water treatment in KSA, we are proud to implement Stauper’s Compact Flotation Unit (CFU) – a significant leap from conventional oil removal methods.       

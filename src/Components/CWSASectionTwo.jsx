@@ -15,7 +15,7 @@ const approaches = [
     {
       id: 3,
       title: 'High Capacity:',
-      description: 'Only CS ARABIA can handle extraordinarily high volumes of fluid, without compromising efficiency or performance. Stauper’s advanced oil-water separation technology means we can apply the method to high water volumes across a broad range of sectors.. This multi-faceted approach enhances the adaptability and efficiency of water treatment processes, meeting diverse operational needs with superior results.',
+      description: 'Only Continuous Services Arabia can handle extraordinarily high volumes of fluid, without compromising efficiency or performance. Stauper’s advanced oil-water separation technology means we can apply the method to high water volumes across a broad range of sectors.. This multi-faceted approach enhances the adaptability and efficiency of water treatment processes, meeting diverse operational needs with superior results.',
     },
     {
       id: 4,
@@ -25,7 +25,7 @@ const approaches = [
     {
       id: 5,
       title: 'Flexible Technology Integration:',
-      description: 'CS ARABIA puts its clients in control. Choose between a plug-and-play solution, or retrofit existing vessels to improve flow capacity and de-oiling without resorting to costly chemicals or vessel recertification',
+      description: 'Continuous Services Arabia puts its clients in control. Choose between a plug-and-play solution, or retrofit existing vessels to improve flow capacity and de-oiling without resorting to costly chemicals or vessel recertification',
     },
  
   ];

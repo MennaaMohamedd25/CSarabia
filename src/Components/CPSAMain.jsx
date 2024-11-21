@@ -14,7 +14,7 @@ const CPSAMain = () => {
         <div className="md:w-1/2 mb-6 md:mb-0 text-center md:text-left order-1 md:order-1">
           {/* Heading */}
           <p className="text-[16px] text-start">
-            CS ARABIA has built a decade-strong reputation on foundations of
+          Continuous Services Arabia has built a decade-strong reputation on foundations of
             innovation, and our pipeline connection solutions are no exception.{" "}
           </p>
 

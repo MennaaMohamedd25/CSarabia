@@ -56,7 +56,7 @@ const Footer = () => {
   }}
 >
 
-          <h2 className='font-bold text-[40px]'>Choose Excellence. Choose CS ARABIA.</h2>
+          <h2 className='font-bold text-[35px]'>Choose Excellence. Choose Continuous Services Arabia.</h2>
           <p className='mt-[16px] mb-[48px] mx-auto'>Connect with our team to see how we can apply our flexible industrial solutions to your business and sector. We have worked hard to achieve the premier status we enjoy today, but we will never stop working to maintain it</p>
           <Link to='contact-us' className="bg-secondery text=[16px] text-[#FFFF] px-[40px] py-[18px] rounded-[50px]">
             Contact Us
@@ -132,7 +132,7 @@ const Footer = () => {
 
           <div className='w-[100%] h-[1px] bg-[#B8B8B8] my-[3rem]'></div>
 
-          <p className='text-secondery text-center'>© Copyright 2024, All Rights Reserved by Csarabia</p>
+          <p className='text-secondery text-center'>© Copyright 2024, All Rights Reserved by Continuous Services Arabia</p>
         </div>
       </footer>
     </>

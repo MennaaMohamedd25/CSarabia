@@ -26,7 +26,7 @@ const approaches = [
       {
         id: 5,
         title: 'Supreme Quality:',
-        description: 'CS Arabia’s experience and technology means we are uniquely poised to effectively remove biofouling, sludge contaminants, and more, with results that last from initial planning to ongoing maintenance.',
+        description: 'Continuous Services Arabia’s experience and technology means we are uniquely poised to effectively remove biofouling, sludge contaminants, and more, with results that last from initial planning to ongoing maintenance.',
       },
    
  

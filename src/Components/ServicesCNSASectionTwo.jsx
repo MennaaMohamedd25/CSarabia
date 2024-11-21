@@ -26,7 +26,7 @@ const ServicesCNSASectionTwo = () => {
           <li className="mt-[2.5rem] text-[16px] text-start">
           Trained Talent: We hire the industry’s most skilled and experienced nitrogen specialists, capable of addressing complex pipeline challenges while adapting to our clients’ distinct needs.          </li>
           <li className="mt-[2.5rem] text-[16px] text-start">
-          Certified Excellence: CS ARABIA is AramcoApproved and certified to deliver the highest quality nitrogen services while adhering to the strictest international industry standards and benchmarks        </li>
+          Certified Excellence: Continuous Services Arabia is AramcoApproved and certified to deliver the highest quality nitrogen services while adhering to the strictest international industry standards and benchmarks        </li>
       </ul>
         </div>
       </div>

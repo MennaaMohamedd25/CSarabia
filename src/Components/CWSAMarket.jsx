@@ -24,7 +24,7 @@ const marketData = [
     image: marketThree,
     title: "QUALITY",
     point1:
-      "At CWSA, adhering to high standards and maintaining rigorous quality controls is paramount in ensuring the reliability and efficacy of our services. This commitment to quality underpins all our operations, from the technologies we employ to the methodologies we follow, ensuring that every project meets stringent industry benchmarks. Our focus on maintaining the highest quality standards not only ensures operational excellence but also strengthens client trust and supports sustainable practices across all our engagements.",
+      "At Continuous Water Services Arabia, adhering to high standards and maintaining rigorous quality controls is paramount in ensuring the reliability and efficacy of our services. This commitment to quality underpins all our operations, from the technologies we employ to the methodologies we follow, ensuring that every project meets stringent industry benchmarks. Our focus on maintaining the highest quality standards not only ensures operational excellence but also strengthens client trust and supports sustainable practices across all our engagements.",
   },
   {
     id: 4,

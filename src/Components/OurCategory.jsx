@@ -13,12 +13,12 @@ const OurCategory = () => {
     {  
       image: workThree, 
       title: 'TECHNOLOGY', 
-      description: 'CS ARABIA spares no expense in procuring the most sophisticated machinery and technology to ensure we can deliver the results you expect without unnecessary setbacks or delays.' 
+      description: 'Continuous Services Arabia spares no expense in procuring the most sophisticated machinery and technology to ensure we can deliver the results you expect without unnecessary setbacks or delays.' 
     },
     {  
       image: workTwo, 
       title: 'QUALITY', 
-      description: 'Service excellence is the lifeblood that pulses at the heart of the CS ARABIA anatomy. We are obsessed with attention to detail, leaving no stone unturned to deliver non-negotiable brilliance.' 
+      description: 'Service excellence is the lifeblood that pulses at the heart of the Continuous Services Arabia anatomy. We are obsessed with attention to detail, leaving no stone unturned to deliver non-negotiable brilliance.' 
     },
     // Add more categories as needed
   ];

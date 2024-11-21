@@ -13,7 +13,7 @@ const Atom = () => {
     },
     {
       title: 'Presence',
-      description: 'The name CS ARABIA is synonymous with technical expertise and process precision across the Gulf and Middle East region.',
+      description: 'The name Continuous Services Arabia is synonymous with technical expertise and process precision across the Gulf and Middle East region.',
     },
   ];
 
