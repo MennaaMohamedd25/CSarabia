@@ -1,6 +1,5 @@
 import React from 'react';
 import teamOne from '../images/team1.png';
-import teamTwo from '../images/team2.png';
 import teamThree from '../images/team3.png';
 import teamFour from '../images/team4.png';
 import teamFive from '../images/team5.png';
